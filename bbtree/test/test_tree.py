@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from pyderives import tree
+from bbtree import tree
 import unittest
 
 
@@ -52,3 +52,8 @@ class TestNN(unittest.TestCase):
     def testHash(self):
         t = tree.TreeLike('XP')
         self.assertEqual(hash(t), hash('XP'))
+
+
+class TestTN(unittest.TestCase):
+
+    pass

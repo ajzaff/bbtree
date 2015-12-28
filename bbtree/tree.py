@@ -69,7 +69,7 @@ class Tree(TreeLike):
                                  leaf_pattern=left_pattern)
         except ValueError:
             pass
-        return TN.fromstring(s, leaf_pattern=left_pattern)
+        return TN.fromstring(s, leaf_pattern=leaf_pattern)
 
 
 class NN(TreeLike):
@@ -125,8 +125,9 @@ class TN(TreeLike):
     def word(self):
         return self._label
 
-    def depth(self, i=0):
-        return i
+    @classmethod
+    def depth(cls, i=0):
+        return i + 1
 
     @classmethod
     def fromstring(cls, s, leaf_pattern='.*'):
