@@ -1,7 +1,8 @@
 package com.alanjz.bbtree.tools.lexedit.ui;
 
 import com.alanjz.bbtree.tools.lexedit.ui.menu.MenuBar;
-import com.alanjz.bbtree.tools.lexedit.ui.panel.words.WordsPanel;
+import com.alanjz.bbtree.tools.lexedit.ui.panes.SplitPane;
+import com.alanjz.bbtree.tools.lexedit.ui.panes.words.WordsPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,15 +16,8 @@ public class Frame extends JFrame {
     // menu bar
     setJMenuBar(new MenuBar());
 
-    // set layout
-    setLayout(new GridLayout(1, 2, 20, 20));
-
-    // add words panel
-    add(new WordsPanel());
-
-    // add dummy
-    // TODO: properties panel
-    add(new JPanel());
+    // add split panel
+    add(new SplitPane());
 
     // set up FRAME
     setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

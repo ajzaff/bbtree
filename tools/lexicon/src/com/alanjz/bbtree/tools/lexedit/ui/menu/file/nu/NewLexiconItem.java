@@ -6,11 +6,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import java.io.File;
 
 public class NewLexiconItem extends JMenuItem implements ActionListener {
   public NewLexiconItem() {
     super("Lexicon...");
+    setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, KeyEvent.META_DOWN_MASK));
     addActionListener(this);
   }
   @Override

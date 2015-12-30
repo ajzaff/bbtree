@@ -1,6 +1,5 @@
-package com.alanjz.bbtree.tools.lexedit.ui.panel.words;
+package com.alanjz.bbtree.tools.lexedit.ui.panes.words;
 
-import com.alanjz.bbtree.Lexeme;
 import com.alanjz.bbtree.tools.lexedit.ui.StyleDefaults;
 
 import javax.swing.*;

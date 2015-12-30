@@ -1,4 +1,4 @@
-package com.alanjz.bbtree.tools.lexedit.ui.panel.words;
+package com.alanjz.bbtree.tools.lexedit.ui.panes.words;
 
 import javax.swing.*;
 import javax.swing.table.*;
