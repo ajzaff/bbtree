@@ -1,3 +1,3 @@
 # BBTree
 
-Real semantics for when vectors aren't enough
+Real deep semantics for when vectors aren't big enough
